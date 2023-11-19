@@ -11,7 +11,7 @@ function showMapData(district){
 
 
     const mapData = `
-    <div class="bg-[#fff] h-[800px] px-4 w-96 py-4 ">
+    <div class="bg-[#fff] h-[800px] px-4 w-96 py-4 rounded-lg">
                 <h1 class="text-[40px] font-bold text-center mb-4" id="sidebar">${district}</h1>
                 <!-- spray infomation box -->
                 <div class="bg-[#001586] p-1 rounded-lg text-white mb-4">
