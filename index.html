@@ -1,0 +1,108 @@
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syngenta</title>
+    <link rel="stylesheet" href="./public/style/style.css">
+
+    <!-- daisy ui -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.3.1/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="bg-[#E9E9E9] w-full h-[1000px]">
+        <!-- Syngenta logo -->
+        <div class="flex justify-center pt-4 pb-4">
+            <img src="./public/assets/img/syngenta_logo.png" alt="" srcset="">
+        </div>
+
+        <!-- information -->
+        <div class="flex justify-between">
+            <!-- month list -->
+            <div class="bg-[#FFF] ms-6 me-5 px-10 py-5 flex flex-col overflow-y-auto rounded-lg ">
+                <button class="btn bg-[#64A2FF] text-[24px] text-[#fff] font-normal px-6  text-center hover:bg-[#093B87] mb-2">January</button>
+                <button class="btn bg-[#64A2FF] text-[24px] text-[#fff] font-normal px-6  text-center hover:bg-[#093B87] mb-2">February</button>
+                <button class="btn bg-[#64A2FF] text-[24px] text-[#fff] font-normal px-6  text-center hover:bg-[#093B87] mb-2">March</button>
+                <button class="btn bg-[#64A2FF] text-[24px] text-[#fff] font-normal px-6  text-center hover:bg-[#093B87] mb-2">April</button>
+                <button class="btn bg-[#64A2FF] text-[24px] text-[#fff] font-normal px-6  text-center hover:bg-[#093B87] mb-2">May</button>
+                <button class="btn bg-[#64A2FF] text-[24px] text-[#fff] font-normal px-6  text-center hover:bg-[#093B87] mb-2">June</button>
+                <button class="btn bg-[#64A2FF] text-[24px] text-[#fff] font-normal px-6  text-center hover:bg-[#093B87] mb-2">July</button>
+                <button class="btn bg-[#64A2FF] text-[24px] text-[#fff] font-normal px-6  text-center hover:bg-[#093B87] mb-2">August</button>
+                <button class="btn bg-[#64A2FF] text-[24px] text-[#fff] font-normal px-6  text-center hover:bg-[#093B87] mb-2">September</button>
+                <button class="btn bg-[#64A2FF] text-[24px] text-[#fff] font-normal px-6  text-center hover:bg-[#093B87] mb-2">October</button>
+                <button class="btn bg-[#64A2FF] text-[24px] text-[#fff] font-normal px-6  text-center hover:bg-[#093B87] mb-2">November</button>
+                <button class="btn bg-[#64A2FF] text-[24px] text-[#fff] font-normal px-6  text-center hover:bg-[#093B87] mb-2">December</button>
+            </div>
+            <!-- map  -->
+            <div class="bg-[#fff] h-[800px] px-10 py-4 me-5">
+                <div class="relative">
+                    <!-- <img class="h-full" src="./public/assets/img/bd_map.png" alt="" srcset=""> -->
+                    <div class="h-full w-full" id="map"></div>
+                    <div class="absolute text-[35px]  top-1 right-1">
+                        <h1 class="font-medium">Planned Programs </h1>
+                        <p class="text-[50px] font-bold text-right">2024</p>
+                    </div>
+                    <div class="text-[40px] font-semibold absolute bottom-1 left-1/3">
+                        Bangladesh
+                    </div>
+                </div>
+            </div>
+             <!-- district infomation show box when click on a district on the map -->
+             <div id="infoSideBar">
+                <div class="bg-[#fff] h-[800px] px-4 w-96 py-4 ">
+                    <h1 class="text-[40px] font-bold text-center mb-4" id="sidebar">Dhaka</h1>
+                    <!-- spray infomation box -->
+                    <div class="bg-[#001586] p-1 rounded-lg text-white mb-4">
+                        <h1 class="text-[23px] font-medium text-center mb-2">Professional Spray Men Training</h1>
+                        <div class="flex justify-between pb-4">
+                            <div class="ps-4">
+                                <h3 class="text-[30px] font-bold text-center">4</h3>
+                                <p class="text-[23px] font-medium text-center">Quantity</p>
+                            </div>
+                            <div class="border-solid border-e-2 border-[#DF3030]"></div>
+                            <div class="pe-2">
+                                <h3 class="text-[30px] font-bold text-center">4</h3>
+                                <p class="text-[23px] font-medium text-center">Outreach</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- spray infomation box -->
+                    <div class="bg-[#06C246] p-1 rounded-lg text-white mb-4">
+                        <h1 class="text-[23px] font-medium text-center mb-2">Lead Farmers Training on Stewardship</h1>
+                        <div class="flex justify-between pb-4">
+                            <div class="ps-4">
+                                <h3 class="text-[30px] font-bold text-center">15</h3>
+                                <p class="text-[23px] font-medium text-center">Quantity</p>
+                            </div>
+                            <div class="border-solid border-e-2 border-[#DF3030]"></div>
+                            <div class="pe-2">
+                                <h3 class="text-[30px] font-bold text-center">450</h3>
+                                <p class="text-[23px] font-medium text-center">Outreach</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- spray infomation box -->
+                    <div class="bg-[#AA0505] p-1 rounded-lg text-white ">
+                        <h1 class="text-[23px] font-medium text-center mb-2">Farm Family Meeting</h1>
+                        <div class="flex justify-between pb-4">
+                            <div class="ps-4">
+                                <h3 class="text-[30px] font-bold text-center">165</h3>
+                                <p class="text-[23px] font-medium text-center">Quantity</p>
+                            </div>
+                            <div class="border-solid border-e-2 border-[#DF3030]"></div>
+                            <div class="pe-2">
+                                <h3 class="text-[30px] font-bold text-center">4680</h3>
+                                <p class="text-[23px] font-medium text-center">Outreach</p>
+                            </div>
+                        </div>
+                    </div>
+                 </div>
+             </div>
+        </div>
+    </div>
+
+    
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="./public/js/map.js"></script>
+</body>
+</html>
