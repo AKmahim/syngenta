@@ -1,3 +1,24 @@
+// ====================== schedule ===============
+
+let data2 = null;
+
+const  schedule = (data)=>{
+    // return data;
+    // console.log(data);
+    data2 = data;
+};
+
+fetch("schedule.json")
+.then(res => res.json())
+.then(data => schedule(data))
+
+console.log(data2);
+//function for check district
+const matchDistrict = (district)=>{
+    schedule.forEach(item => {
+        
+    });
+}
 
 // ============================ with all subdistricts ===============
 
@@ -11,7 +32,7 @@ function showMapData(district){
 
 
     const mapData = `
-    <div class="bg-[#fff] h-[800px] px-4 w-96 py-4 rounded-lg">
+    <div class="bg-[#fff] h-[800px] px-4 w-96 py-4 rounded-lg overflow-y-auto">
                 <h1 class="text-[40px] font-bold text-center mb-4" id="sidebar">${district}</h1>
                 <!-- spray infomation box -->
                 <div class="bg-[#001586] p-1 rounded-lg text-white mb-4">
@@ -44,7 +65,7 @@ function showMapData(district){
                     </div>
                 </div>
                 <!-- spray infomation box -->
-                <div class="bg-[#AA0505] p-1 rounded-lg text-white ">
+                <div class="bg-[#AA0505] p-1 rounded-lg text-white mb-4">
                     <h1 class="text-[23px] font-medium text-center mb-2">Farm Family Meeting</h1>
                     <div class="flex justify-between pb-4">
                         <div class="ps-4">
@@ -58,6 +79,39 @@ function showMapData(district){
                         </div>
                     </div>
                 </div>
+                <!-- spray infomation box -->
+                <div class="bg-[#06C246] p-1 rounded-lg text-white mb-4">
+                    <h1 class="text-[18px] font-medium text-center mb-2">Application Technology Training for Post Graduate Student at SAU</h1>
+                    <div class="flex justify-between pb-4">
+                        <div class="ps-4">
+                            <h3 class="text-[30px] font-bold text-center">${n5}</h3>
+                            <p class="text-[23px] font-medium text-center">Quantity</p>
+                        </div>
+                        <div class="border-solid border-e-2 border-[#DF3030]"></div>
+                        <div class="pe-2">
+                            <h3 class="text-[30px] font-bold text-center">${n6}</h3>
+                            <p class="text-[23px] font-medium text-center">Outreach</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- spray infomation box -->
+                <div class="bg-[#001586] p-1 rounded-lg text-white ">
+                    <h1 class="text-[18px] font-medium text-center mb-2">Application Technology Training for SYT Sales Staff</h1>
+                    <div class="flex justify-between pb-4">
+                        <div class="ps-4">
+                            <h3 class="text-[30px] font-bold text-center">${n5}</h3>
+                            <p class="text-[23px] font-medium text-center">Quantity</p>
+                        </div>
+                        <div class="border-solid border-e-2 border-[#DF3030]"></div>
+                        <div class="pe-2">
+                            <h3 class="text-[30px] font-bold text-center">${n6}</h3>
+                            <p class="text-[23px] font-medium text-center">Outreach</p>
+                        </div>
+                    </div>
+                </div>
+
+
              </div>
     `
     return mapData;
