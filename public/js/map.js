@@ -29,6 +29,11 @@ function showMapData(district){
     const n4 = Math.floor(Math.random() * 100);
     const n5 = Math.floor(Math.random() * 100);
     const n6 = Math.floor(Math.random() * 100);
+    const n7 = Math.floor(Math.random() * 100);
+    const n8 = Math.floor(Math.random() * 100);
+    const n9 = Math.floor(Math.random() * 100);
+    const n10 = Math.floor(Math.random() * 100);
+
 
 
     const mapData = `
@@ -84,12 +89,12 @@ function showMapData(district){
                     <h1 class="text-[18px] font-medium text-center mb-2">Application Technology Training for Post Graduate Student at SAU</h1>
                     <div class="flex justify-between pb-4">
                         <div class="ps-4">
-                            <h3 class="text-[30px] font-bold text-center">${n5}</h3>
+                            <h3 class="text-[30px] font-bold text-center">${n7}</h3>
                             <p class="text-[23px] font-medium text-center">Quantity</p>
                         </div>
                         <div class="border-solid border-e-2 border-[#DF3030]"></div>
                         <div class="pe-2">
-                            <h3 class="text-[30px] font-bold text-center">${n6}</h3>
+                            <h3 class="text-[30px] font-bold text-center">${n8}</h3>
                             <p class="text-[23px] font-medium text-center">Outreach</p>
                         </div>
                     </div>
@@ -100,12 +105,12 @@ function showMapData(district){
                     <h1 class="text-[18px] font-medium text-center mb-2">Application Technology Training for SYT Sales Staff</h1>
                     <div class="flex justify-between pb-4">
                         <div class="ps-4">
-                            <h3 class="text-[30px] font-bold text-center">${n5}</h3>
+                            <h3 class="text-[30px] font-bold text-center">${n9}</h3>
                             <p class="text-[23px] font-medium text-center">Quantity</p>
                         </div>
                         <div class="border-solid border-e-2 border-[#DF3030]"></div>
                         <div class="pe-2">
-                            <h3 class="text-[30px] font-bold text-center">${n6}</h3>
+                            <h3 class="text-[30px] font-bold text-center">${n10}</h3>
                             <p class="text-[23px] font-medium text-center">Outreach</p>
                         </div>
                     </div>
